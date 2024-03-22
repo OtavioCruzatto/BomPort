@@ -11,7 +11,7 @@ print("OK")
 #######################################################################################################################
 
 filename_bom_template = "Template.xlsx"
-filename_bom_altium = "Input.xlsx"
+filename_bom_input = "Input.xlsx"
 filename_bom_portada = "Output.xlsx"
 linha_editavel = 22 # As alterações no excel começarão a partir desta linha
 contador_de_componentes = 2
@@ -26,9 +26,9 @@ print("OK")
 #######################################################################################################################
 
 print("Carregando BOM de Entrada.....................", end="")
-workbook_bom_altium = load_workbook(filename="..\\Input\\" + filename_bom_altium,
-                                    read_only=True)
-worksheet_bom_altium = workbook_bom_altium.active
+workbook_bom_input = load_workbook(filename="..\\Input\\" + filename_bom_input,
+                                   read_only=True)
+worksheet_bom_input = workbook_bom_input.active
 print("OK")
 
 #######################################################################################################################
@@ -50,7 +50,7 @@ print("Carregando dados da BOM de entrada............", end="")
 
 components = []
 
-for row in worksheet_bom_altium.iter_rows(min_row=2, values_only=True):
+for row in worksheet_bom_input.iter_rows(min_row=2, values_only=True):
     component = Component(code=row[CODE-1],
                           description=row[DESCRIPTION-1],
                           quantity=row[QUANTITY-1],

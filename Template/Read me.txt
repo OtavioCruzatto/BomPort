@@ -15,3 +15,8 @@ pip freeze > requirements.txt
 Para instalar as dependencias a partir do pip freeze > requirements.txt:
 pip install -r requirements.txt
 
+Observações gerais:
+Python 3.7 ou superior
+Deve ser instalado a biblioteca "openpyxl"
+Deve ser instalado a biblioteca "Pillow"
+

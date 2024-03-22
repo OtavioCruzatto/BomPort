@@ -2,11 +2,16 @@ Para habilitar ambiente virtual:
 venv_bom_port\Scripts\activate
 Obs: O comando deve ser enviado pelo terminal e o shell deve estar na pasta raiz do projeto: "BomPort"
 
-Para desabilitar ambiente virtual:
+Para rodar o script:
+python port.py
+Obs: O comando deve ser enviado pelo terminal, o ambiente virtual deve estar ativo e o shell deve estar na pasta do script: "App"
 
+Para desabilitar ambiente virtual:
+deactivate
 
 Para criar arquivo requirements.txt:
+pip freeze > requirements.txt
 
-
-
+Para instalar as dependencias a partir do pip freeze > requirements.txt:
+pip install -r requirements.txt
 

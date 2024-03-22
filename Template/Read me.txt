@@ -1,0 +1,12 @@
+Para habilitar ambiente virtual:
+venv_bom_port\Scripts\activate
+Obs: O comando deve ser enviado pelo terminal e o shell deve estar na pasta raiz do projeto: "BomPort"
+
+Para desabilitar ambiente virtual:
+
+
+Para criar arquivo requirements.txt:
+
+
+
+
